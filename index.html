@@ -52,7 +52,20 @@ body {
   font-size: 48px;
   font-weight: 700;
 }
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
 
+.heading-line {
+  width: 80px;
+  height: 4px;
+  margin: 10px auto 0;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ffd700, #ff9800);
+}
 @media(max-width:768px){
   .hero h1 { font-size: 28px; }
 }
@@ -99,7 +112,55 @@ footer {
   color: white;
   padding: 30px 0;
 }
+.footer-section {
+  background: #1a1a2e;
+  color: #fff;
+}
 
+.footer-section h4,
+.footer-section h5 {
+  color: #ffd700;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff9800;
+  padding-left: 5px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  background: #ff9800;
+  color: #fff;
+}
+
+.dev-link {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dev-link:hover {
+  text-decoration: underline;
+}
 
 </style>
 </head>
@@ -141,11 +202,21 @@ footer {
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<<section class="hero text-center">
   <div class="container">
     <h1>Welcome To Mauli Decoration</h1>
-    <p class="mt-3"><span id="typed"></span></p>
-    <p>We Create Memorable Events & Beautiful Interiors</p>
+
+    <p class="mt-3">
+      <span id="typed"></span>
+    </p>
+
+    <p>We Create Stunning Decorations & Elegant Wallpaper Designs</p>
+
+    <!-- CTA Button -->
+    <a href="#work" class="btn btn-warning btn-lg mt-3 px-4">
+      Check Out Our Work
+    </a>
+
   </div>
 </section>
 
@@ -158,8 +229,10 @@ footer {
     </div>
 
     <div class="col-lg-6">
-      <h2 class="fw-bold">About Mauli Decoration</h2>
-      <p>We specialize in Event Management and Interior Decoration. From weddings to 3D wall designs, we bring creativity to life.</p>
+<div class="text-center mb-5">
+  <h2 class="section-heading">About Us</h2>
+  <div class="heading-line"></div>
+</div>      <p>We specialize in Event Management and Interior Decoration. From weddings to 3D wall designs, we bring creativity to life.</p>
 
       <p><strong>Owner:</strong> Amit Kate</p>
       <p><strong>Phone:</strong> +91 9967442899</p>
@@ -170,11 +243,20 @@ footer {
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="container py-5"> <h2 class="text-center section-title">Our Services</h2> <div class="row w-100"> <div class="col-md-4 mb-4 "> <div class="service-box shadow text-center h-100"> <img src="assets/img/BPSimg.png" class="img-fixed"> <h4 class="mt-3">Birthday Party Setup</h4> <p> We create vibrant and memorable birthday party setups tailored to your theme and preferences. From colorful balloon decorations to beautifully designed backdrops, we ensure every detail is perfect. Our team handles everything from cake table styling to lighting and props. Whether it’s a kids’ party or an elegant celebration, we bring creativity and joy to every event. Let us turn your special day into an unforgettable experience filled with happiness and style.</p> </div> </div> <div class="col-md-4 mb-4"> <div class="service-box shadow text-center h-100"> <img src="assets/img/EREimg.png" class="img-fixed"> <h4 class="mt-3">Engagement & Reception Events</h4> <p>We specialize in creating elegant and memorable engagement and reception events with beautifully designed setups and premium decorations. Our team focuses on delivering a perfect blend of modern style and traditional charm to match your special occasion. From stage design and floral arrangements to lighting and seating, every detail is carefully planned. We ensure a smooth and stress-free experience so you can enjoy every moment of your celebration. Our goal is to turn your event into a stunning and unforgettable experience for you and your guests.</p> </div> </div> <div class="col-md-4 mb-4"> <div class="service-box shadow text-center h-100"> <img src="assets/img/3dimg.png" class="img-fixed"> <h4 class="mt-3">3D Wallpaper Interior</h4> <p>3D wallpaper interior design adds a modern and stylish touch to any space by creating depth and a realistic visual effect on walls. It transforms plain walls into eye-catching features using textures, patterns, and creative designs. These wallpapers are available in various styles like geometric, nature, abstract, and luxury themes to match different interiors. They are easy to install, durable, and enhance the overall ambiance of living rooms, bedrooms, offices, and commercial spaces. With 3D wallpapers, you can give your space a premium and elegant look without major renovation..</p> </div> </div> </div> <div class="row"> <div class="col-md-4 mb-4"> <div class="service-box shadow text-center h-100"> <img src="assets/img/CEMimg.png" class="img-fixed"> <h4 class="mt-3">Corporate Event Management</h4> <p>We provide professional corporate event management services tailored to meet your business needs. From conferences and seminars to product launches and corporate parties, we handle every detail with precision. Our team ensures seamless planning, elegant setups, and high-quality execution. We focus on creating a strong brand impression through well-organized and visually appealing events. With our expertise, your corporate events become impactful, engaging, and memorable.</p> </div> </div> <div class="col-md-4 mb-4"> <div class="service-box shadow text-center h-100"> <img src="assets/img/FCEDimg.png" class="img-fixed"> <h4 class="mt-3">Festival & Cultural Event Decoration</h4> <p>We specialize in creating vibrant and memorable festival and cultural event decorations that reflect tradition, creativity, and elegance. Our designs include colorful themes, floral arrangements, lighting setups, and customized stage decor to match every celebration. From traditional festivals like Diwali and Ganpati to cultural programs and community events, we bring authenticity and festive spirit to every setup. We focus on high-quality materials, unique concepts, and detailed execution to enhance the overall experience. Our goal is to transform your event into a visually stunning and joyful celebration that leaves a lasting impression.</p> </div> </div> <div class="col-md-4 mb-4"> <div class="service-box shadow text-center h-100"> <img src="assets/img/SDDimg.png" class="img-fixed"> <h4 class="mt-3">Stage Design</h4> <p>Stage design plays a crucial role in creating a visually appealing and memorable event experience. It combines elements like lighting, backdrop, colors, and props to match the theme of the occasion. A well-designed stage enhances the overall ambiance and becomes the focal point for guests and photography. Creative use of balloons, flowers, and LED lighting adds elegance and modern appeal to the setup. Professional stage design ensures your event looks organized, attractive, and truly unforgettable.</p> </div> </div> </div> </di> </section>
+<section id="services" class="container py-5"> 
+<div class="text-center mb-5">
+  <h2 class="section-heading">Our Services</h2>
+  <div class="heading-line"></div>
+</div>  <div class="row w-100"> <div class="col-md-4 mb-4 "> 
+    <div class="service-box shadow text-center h-100"> 
+      <img src="assets/img/BPSimg.png" class="img-fixed"> 
+      <h4 class="mt-3">Birthday Party Setup</h4> <p> We create vibrant and memorable birthday party setups tailored to your theme and preferences. From colorful balloon decorations to beautifully designed backdrops, we ensure every detail is perfect. Our team handles everything from cake table styling to lighting and props. Whether it’s a kids’ party or an elegant celebration, we bring creativity and joy to every event. Let us turn your special day into an unforgettable experience filled with happiness and style.</p> </div> </div> <div class="col-md-4 mb-4"> <div class="service-box shadow text-center h-100"> <img src="assets/img/EREimg.png" class="img-fixed"> <h4 class="mt-3">Engagement & Reception Events</h4> <p>We specialize in creating elegant and memorable engagement and reception events with beautifully designed setups and premium decorations. Our team focuses on delivering a perfect blend of modern style and traditional charm to match your special occasion. From stage design and floral arrangements to lighting and seating, every detail is carefully planned. We ensure a smooth and stress-free experience so you can enjoy every moment of your celebration. Our goal is to turn your event into a stunning and unforgettable experience for you and your guests.</p> </div> </div> <div class="col-md-4 mb-4"> <div class="service-box shadow text-center h-100"> <img src="assets/img/3dimg.png" class="img-fixed"> <h4 class="mt-3">3D Wallpaper Interior</h4> <p>3D wallpaper interior design adds a modern and stylish touch to any space by creating depth and a realistic visual effect on walls. It transforms plain walls into eye-catching features using textures, patterns, and creative designs. These wallpapers are available in various styles like geometric, nature, abstract, and luxury themes to match different interiors. They are easy to install, durable, and enhance the overall ambiance of living rooms, bedrooms, offices, and commercial spaces. With 3D wallpapers, you can give your space a premium and elegant look without major renovation..</p> </div> </div> </div> <div class="row"> <div class="col-md-4 mb-4"> <div class="service-box shadow text-center h-100"> <img src="assets/img/CEMimg.png" class="img-fixed"> <h4 class="mt-3">Corporate Event Management</h4> <p>We provide professional corporate event management services tailored to meet your business needs. From conferences and seminars to product launches and corporate parties, we handle every detail with precision. Our team ensures seamless planning, elegant setups, and high-quality execution. We focus on creating a strong brand impression through well-organized and visually appealing events. With our expertise, your corporate events become impactful, engaging, and memorable.</p> </div> </div> <div class="col-md-4 mb-4"> <div class="service-box shadow text-center h-100"> <img src="assets/img/FCEDimg.png" class="img-fixed"> <h4 class="mt-3">Festival & Cultural Event Decoration</h4> <p>We specialize in creating vibrant and memorable festival and cultural event decorations that reflect tradition, creativity, and elegance. Our designs include colorful themes, floral arrangements, lighting setups, and customized stage decor to match every celebration. From traditional festivals like Diwali and Ganpati to cultural programs and community events, we bring authenticity and festive spirit to every setup. We focus on high-quality materials, unique concepts, and detailed execution to enhance the overall experience. Our goal is to transform your event into a visually stunning and joyful celebration that leaves a lasting impression.</p> </div> </div> <div class="col-md-4 mb-4"> <div class="service-box shadow text-center h-100"> <img src="assets/img/SDDimg.png" class="img-fixed"> <h4 class="mt-3">Stage Design</h4> <p>Stage design plays a crucial role in creating a visually appealing and memorable event experience. It combines elements like lighting, backdrop, colors, and props to match the theme of the occasion. A well-designed stage enhances the overall ambiance and becomes the focal point for guests and photography. Creative use of balloons, flowers, and LED lighting adds elegance and modern appeal to the setup. Professional stage design ensures your event looks organized, attractive, and truly unforgettable.</p> </div> </div> </div> </di> </section>
 <!-- WORK -->
 <section id="work" class="container py-5">
-  <h2 class="text-center fw-bold mb-5">Our Work</h2>
-
+<div class="text-center mb-5">
+  <h2 class="section-heading">Our Work</h2>
+  <div class="heading-line"></div>
+</div>
   <div class="row g-4">
 
     <!-- Item 1 -->
@@ -224,8 +306,10 @@ footer {
 
 <!-- CONTACT -->
 <section id="contact" class="container py-5 w-100">
-  <h2 class="text-center mb-4">Contact</h2>
-
+<div class="text-center mb-5">
+  <h2 class="section-heading">Contact Us</h2>
+  <div class="heading-line"></div>
+</div>
   <div class="row g-4">
 
     <div class="col-md-6">
@@ -243,21 +327,70 @@ footer {
  
 
 <!-- FOOTER -->
-<footer class="text-center bg-dark text-white py-4">
+<footer class="footer-section text-white pt-5 pb-3">
   <div class="container">
+    <div class="row text-start">
 
-    <h5 class="fw-bold">Mauli Decoration</h5>
-    <p class="mb-2">© 2026 All Rights Reserved</p>
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h4 class="fw-bold mb-3">Mauli Decoration</h4>
+        <p>
+          Transforming your special moments into unforgettable memories 
+          with creative decorations & elegant 3D interiors.
+        </p>
 
-    <!-- Developer Credit -->
-    <p class="mb-0">
-      Design & Developed by 
-      <a href="https://nachikketyadav.online/" target="_blank" 
-         class="text-warning fw-semibold text-decoration-none">
-         Nachikket Yadav
-      </a>
-    </p>
+        <!-- Social Icons -->
+        <div class="mt-3">
+          <!-- <!-- <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a> -->
+          <!-- <a href="https://wa.me/919967442899" class="social-icon"><i class="bi bi-whatsapp"></i></a> -->
+        </div> 
+      </div>
 
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Our Work</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3">Services</h5>
+        <ul class="list-unstyled footer-links">
+          <li>Birthday Decoration</li>
+          <li>Wedding & Reception</li>
+          <li>3D Wallpaper Design</li>
+          <li>Corporate Events</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3">Contact</h5>
+        <p class="mb-1"><i class="bi bi-geo-alt"></i> Wardha, Maharashtra</p>
+        <p class="mb-1"><i class="bi bi-phone"></i> +91 99674 42899</p>
+        <!-- <p><i class="bi bi-envelope"></i> info@maulidecoration.com</p> -->
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-1">© 2026 <strong>Mauli Decoration</strong>. All Rights Reserved</p>
+      <p class="mb-0">
+        Design & Developed by 
+        <a href="https://nachikketyadav.online/" target="_blank" class="dev-link">
+          Nachikket Yadav
+        </a>
+      </p>
+    </div>
   </div>
 </footer>
 </body>
