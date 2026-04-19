@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Mauli Decoration</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Typed JS -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <link href="assets/img/MDlogo.png" src="assets/img/mylogo.png" rel="icon" style="border-radius: 5[x 2px 5px 2[x]];" >
+
+
+<style>
+
+/* COLORS */
+:root {
+  --primary: #6a1b9a;
+  --secondary: #ff9800;
+  --dark: #1a1a2e;
+}
+
+/* GENERAL */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/MBanner1.png');
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* SECTION */
+.section-title {
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* SERVICES */
+.service-box {
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+}
+
+.img-fixed {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* CTA */
+.cta {
+  background: var(--primary);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+.choose-card {
+    background: #ffffff;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.choose-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.icon-box {
+    font-size: 40px;
+    color: #ff6b6b;
+}
+
+.choose-card h5 {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.choose-card p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Image Card */
+.work-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Image Style */
+.work-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom Effect */
+.work-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* Show overlay on hover */
+.work-card:hover .overlay {
+  opacity: 1;
+}
+.about-info-card {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  border-left: 5px solid #2c3e50; /* Matches your theme color */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.img-fluid {
+    max-width: 138%;
+    height: auto;
+}
+.name-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  color: #e67e22; /* A nice accent color for a decorator */
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-item i {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  background: rgba(44, 62, 80, 0.1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.info-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.info-link {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.info-link:hover {
+  color: #e67e22;
+}
+
+/* Text */
+.overlay h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+/* Title Styling */
+.title-box-2 {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.title-left {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.title-left span {
+  color: #e67e22; /* Warm accent color */
+}
+
+/* The decorative line under the title */
+.title-left::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #e67e22;
+  bottom: 0;
+  left: 0;
+}
+
+/* Text Styling */
+.about-text {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-accent {
+  color: #2c3e50;
+  font-weight: 600;
+  border-bottom: 1px solid #e67e22;
+}
+
+/* Highlight Box */
+.mission-box {
+  padding: 20px;
+  margin: 25px 0;
+  border-left: 4px solid #e67e22;
+  background: #fdfaf7; /* Very light tint of the accent color */
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+  border-radius: 0 10px 10px 0;
+}
+
+.footer-section {
+  background: #1a252f; /* Darker than your header for depth */
+  color: #fff;
+  padding: 60px 0 30px;
+  font-size: 14px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-logo span {
+  color: #e67e22; /* Golden/Orange accent */
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 50px;
+  background: #e67e22;
+}
+
+/* Links Styling */
+.footer-section {
+  background-color: #894f1c;
+  color: #ffffff;
+  padding: 60px 0 30px 0;
+  font-size: 14px;
+  border-top: 5px solid #6d3d13; /* Adds a nice top accent */
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  color: #ffd700; /* Gold accent for headers */
+}
+
+.footer-section .footer-logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.footer-section .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section .footer-links ul li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-section .footer-links ul a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+
+.footer-section .footer-links ul a:hover {
+  color: #ffd700;
+  padding-left: 5px;
+}
+
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #ffd700;
+  color: #894f1c;
+}
+
+.dev-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Social Icons */
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #e67e22;
+  color: #fff;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 30px;
+}
+
+.dev-link {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dev-link:hover {
+  text-decoration: underline;
+}
+/* Ensure the H1 doesn't have weird default margins */
+.logo {
+  margin: 0;
+  padding: 0;
+  display: inline-block; /* Keeps the container tight to the logo */
+}
+
+.logo a {
+  display: flex;
+}
+
+.img_logo {
+  /* This makes it responsive */
+      max-width: 100%;
+    height: auto;
+    width: 79px;
+    display: block;
+    border-radius: 50%;
+  
+  /* Set a specific width so it's not huge on desktop */
+  
+  /* Smooth scaling */
+  display: block;
+}
+.nav-link
+{
+  color: white;
+}
+.nav-link:hover
+{
+  color: #f29e54;
+}
+/* Layout & Alignment */
+.logo-link {
+  display: flex;
+  align-items: center; /* Vertically centers text with the logo */
+  text-decoration: none;
+  gap: 12px; /* Space between logo and text */
+}
+
+/* Logo Image Styling */
+.img_logo {
+  height: 50px; /* Set a fixed height that fits your navbar */
+  width: auto;  /* Maintains aspect ratio */
+  display: block;
+}
+
+/* Text Styling */
+.logo-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+  text-transform: uppercase; /* Optional: adds a formal look */
+  transition: color 0.3s ease;
+  
+}
+
+/* Interactive Hover Effect */
+.logo-link:hover .logo-text {
+  color:#e79d5d; /* Changes color when someone hovers */
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  
+  .logo{
+    margin-left: -23%;
+  }
+  .logo-text {
+    font-size: 1.2rem;
+  }
+  .img_logo {
+    height: 40px;
+  }
+  .hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/img/MBanner1.png);
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+        width: 133vw;
+
+}
+}
+/* Optional: Change size for mobile specifically */
+@media (max-width: 768px) {
+  .img_logo {
+    width: 80px;
+  }
+  hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/img/MBanner1.png);
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+        width: 133vw;
+
+}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero h1 { font-size: 28px; }
+  hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/img/MBanner1.png);
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+        width: 133vw;
+
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<h1 class="logo">
+  <h1 class="logo">
+  <a href="index.html" class="logo-link">
+    <img src="assets/img/MDimg1.png" alt="Mauli Decoration Logo" class="img_logo">
+    <span class="logo-text">Mauli Decoration</span>
+  </a>
+</h1>
+</h1>  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="nav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+  <h1>Welcome To Mauli Decoration</h1>
+
+  <p class="mt-3">
+    <span id="typed"></span>
+  </p>
+
+  <p>
+    We Create Memorable Events & Beautiful Interiors  
+  </p>
+
+  <!-- <a href="#contact" class="btn btn-warning mt-3">Book Now</a> -->
+</div>
+</section><br>
+ <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/MDimg1.png" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+  <div class="about-info-card">
+    <h3 class="name-title">Amit Kate</h3>
+    <p class="tagline">Founder, Mauli Decoration</p>
+    
+    <div class="info-list">
+      <div class="info-item">
+        <i class="bi bi-person-badge"></i>
+        <div>
+          <span class="info-label">Owner & Lead Designer</span>
+        </div>
+      </div>
+
+      <!-- <div class="info-item">
+        <i class="bi bi-envelope-at"></i>
+        <div>
+          <a href="mailto:amitkate@example.com" class="info-link">amitkate@example.com</a>
+        </div>
+      </div> -->
+
+      <div class="info-item">
+        <i class="bi bi-telephone-outbound"></i>
+        <div>
+          <a href="tel:+919876543210" class="info-link">+91 9967442899</a>
+        </div>
+      </div>
+      
+      <div class="info-item">
+        <i class="bi bi-geo-alt"></i>
+        <div>
+          <span class="info-link">Maharashtra, India</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                  </div>
+                  <!-- <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>HTML</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>C#</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Dot net</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="col-md-6">
+  <div class="about-me pt-4 pt-md-0">
+    <div class="title-box-2">
+      <h5 class="title-left">
+        About <span>Mauli Decoration</span>
+      </h5>
+    </div>
+    
+    <p class="about-text lead">
+      At <strong>Mauli Decoration</strong>, we don’t just decorate spaces—we tell stories. 
+      We specialize in the dual art of <span class="text-accent">Event Management</span> and 
+      <span class="text-accent">Luxury Interior Design</span>, blending the thrill of a 
+      perfectly executed celebration with the lasting beauty of 3D interior wall art.
+    </p>
+
+    <div class="mission-box">
+      <p>
+        From the breathtaking floral arrangements of a wedding to the cutting-edge textures 
+        of modern 3D wallpaper, our mission is to turn the <strong>ordinary into the extraordinary</strong>.
+      </p>
+    </div>
+
+    <p class="about-text">
+      We believe that every environment, whether a temporary stage or a permanent home, 
+      should be a reflection of style, emotion, and innovation.
+    </p>
+  </div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><
+
+<!-- SERVICES -->
+<section id="services" class="container py-5">
+<h2 class="text-center section-title">Our Services</h2>
+
+<div class="row w-100">
+
+<div class="col-md-4 mb-4">
+<div class="service-box shadow  text-center h-100">
+<img src="assets/img/BPSimg.png" class="img-fixed">
+<h4 class="mt-3">Birthday Party Setup</h4>
+<p> We create vibrant and memorable birthday party setups tailored to your theme and preferences. 
+  From colorful balloon decorations to beautifully designed backdrops, we ensure every detail is perfect. Our team handles everything from cake table styling to lighting and props. Whether it’s a kids’ party or an elegant celebration, we bring creativity and joy to every event. Let us turn your special day into an unforgettable experience filled with happiness and style.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="service-box shadow  text-center h-100">
+<img src="assets/img/EREimg.png" class="img-fixed">
+<h4 class="mt-3">Engagement & Reception Events</h4>
+<p>We specialize in creating elegant and memorable engagement and reception events with beautifully designed setups and premium decorations. Our team focuses on delivering a perfect blend of modern style and traditional charm to match your special occasion. From stage design and floral arrangements to lighting and seating, every detail is carefully planned. We ensure a smooth and stress-free experience so you can enjoy every moment of your celebration. Our goal is to turn your event into a stunning and unforgettable experience for you and your guests.</p>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+<div class="service-box shadow text-center h-100">
+<img src="assets/img/3dimg.png" class="img-fixed">
+<h4 class="mt-3">3D Wallpaper Interior</h4>
+<p>3D wallpaper interior design adds a modern and stylish touch to any space by creating depth and a realistic visual effect on walls. It transforms plain walls into eye-catching features using textures, patterns, and creative designs. These wallpapers are available in various styles like geometric, nature, abstract, and luxury themes to match different interiors. They are easy to install, durable, and enhance the overall ambiance of living rooms, bedrooms, offices, and commercial spaces. With 3D wallpapers, you can give your space a premium and elegant look without major renovation..</p>
+</div>
+</div>
+
+
+</div>
+<div class="row">
+  <div class="col-md-4 mb-4">
+<div class="service-box shadow text-center h-100">
+<img src="assets/img/CEMimg.png" class="img-fixed">
+<h4 class="mt-3">Corporate Event Management</h4>
+<p>We provide professional corporate event management services tailored to meet your business needs. From conferences and seminars to product launches and corporate parties, we handle every detail with precision. Our team ensures seamless planning, elegant setups, and high-quality execution. We focus on creating a strong brand impression through well-organized and visually appealing events. With our expertise, your corporate events become impactful, engaging, and memorable.</p>
+</div>
+  </div>
+<div class="col-md-4 mb-4">
+<div class="service-box shadow text-center h-100">
+<img src="assets/img/FCEDimg.png" class="img-fixed">
+<h4 class="mt-3">Festival & Cultural Event Decoration</h4>
+<p>We specialize in creating vibrant and memorable festival and cultural event decorations that reflect tradition, creativity, and elegance. Our designs include colorful themes, floral arrangements, lighting setups, and customized stage decor to match every celebration. From traditional festivals like Diwali and Ganpati to cultural programs and community events, we bring authenticity and festive spirit to every setup. We focus on high-quality materials, unique concepts, and detailed execution to enhance the overall experience. Our goal is to transform your event into a visually stunning and joyful celebration that leaves a lasting impression.</p>
+</div>
+</div>
+<div class="col-md-4 mb-4">
+<div class="service-box shadow text-center h-100">
+<img src="assets/img/SDDimg.png" class="img-fixed">
+<h4 class="mt-3">Stage Design</h4>
+<p>Stage design plays a crucial role in creating a visually appealing and memorable event experience. It combines elements like lighting, backdrop, colors, and props to match the theme of the occasion. A well-designed stage enhances the overall ambiance and becomes the focal point for guests and photography. Creative use of balloons, flowers, and LED lighting adds elegance and modern appeal to the setup. Professional stage design ensures your event looks organized, attractive, and truly unforgettable.</p>
+</div>
+</div>
+</div>
+
+</di>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="container py-5 text-center">
+  <h2 class="fw-bold mb-5" style="color:#2c3e50;">Why Choose Us</h2>
+
+  <div class="row g-4">
+
+    <!-- Item 1 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="choose-card p-4 h-100">
+        <div class="icon-box mb-3">
+          <i class="bi bi-gem"></i>
+        </div>
+        <h5>Premium Design</h5>
+        <p>Modern, elegant and creative designs for every event.</p>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="choose-card p-4 h-100">
+        <div class="icon-box mb-3">
+          <i class="bi bi-cash-stack"></i>
+        </div>
+        <h5>Affordable Pricing</h5>
+        <p>High quality services at budget-friendly prices.</p>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="col-md-4 col-sm-6">
+      <div class="choose-card p-4 h-100">
+        <div class="icon-box mb-3">
+          <i class="bi bi-people-fill"></i>
+        </div>
+        <h5>Expert Team</h5>
+        <p>Experienced professionals delivering perfect execution.</p>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <!-- <div class="col-md-3 col-sm-6">
+      <div class="choose-card p-4 h-100">
+        <div class="icon-box mb-3">
+          <i class="bi bi-clock-fill"></i>
+        </div>
+        <h5>On-Time Delivery</h5>
+        <p>We ensure timely setup and smooth event experience.</p>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+<!-- WORK -->
+<section id="work" class="container py-5">
+  <h2 class="text-center fw-bold mb-5" style="color:#2c3e50;">Our Work</h2>
+
+  <div class="row g-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="work-card">
+        <img src="assets/img/ow1.jpeg" alt="Birthday Party Decoration" class="img-fluid">
+        <div class="overlay">
+          <!-- <h5>Birthday Party Decoration</h5> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="work-card">
+        <img src="assets/img/ow2.jpeg" alt="Wedding Event Decoration" class="img-fluid">
+        <div class="overlay">
+          <!-- <h5>Wedding Event Decoration</h5> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="work-card">
+        <img src="assets/img/ow3.jpeg" alt="Stage Decoration Design" class="img-fluid">
+        <div class="overlay">
+          <!-- <h5>Stage Decoration Design</h5> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="work-card">
+        <img src="assets/img/ow4.jpeg" alt="Balloon Decoration Setup" class="img-fluid">
+        <div class="overlay">
+          <!-- <h5>Balloon Decoration Setup</h5> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="work-card">
+        <img src="assets/img/ow5.jpeg" alt="Reception Event Setup" class="img-fluid">
+        <div class="overlay">
+          <!-- <h5>Reception Event Setup</h5> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="work-card">
+        <img src="assets/img/ow6.jpeg" alt="3D Wall Interior Design" class="img-fluid">
+        <div class="overlay">
+          <!-- <h5>3D Wall Interior Design</h5> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA -->
+ <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" ">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <!-- <div class="col-md-6">
+                     <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
+                    </div> -->
+                    <!-- <div>
+                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div> -->
+                  </div>
+                  <section id="contact" class="py-5 bg-light">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-md-10">
+                        <div class="card border-0 shadow-lg overflow-hidden">
+                          <div class="row g-0">
+                            
+                            <div class="col-lg-5 p-4 p-md-5 bg-white">
+                              <div class="title-box-2 mb-4">
+                                <h3 class="fw-bold text-primary">Get In Touch</h3>
+                                <div class="line-mf" style="width: 50px; height: 3px; background: #007bff;"></div>
+                              </div>
+                              
+                              <div class="more-info">
+                                <ul class="list-unstyled">
+                                  <li class="d-flex mb-4">
+                                    <div class="icon-circle me-3">
+                                      <i class="bi bi-geo-alt-fill text-primary"></i>
+                                    </div>
+                                    <span>Goras Bhandar Colony, Back of LokMahaviddyalaya, Pratapnagar, Wardha, MH 442001</span>
+                                  </li>
+                                  <li class="d-flex mb-4">
+                                    <div class="icon-circle me-3">
+                                      <i class="bi bi-phone-fill text-primary"></i>
+                                    </div>
+                                    <span>+91 99674 42899</span>
+                                  </li>
+                                </ul>
+                              </div>
+
+                              <div class="socials mt-5">
+                                <div class="d-grid gap-3">
+                                  <a href="tel:+919967442899" class="btn btn-primary btn-lg d-flex align-items-center justify-content-center gap-2 rounded-pill">
+                                    <i class="bi bi-telephone-fill"></i> Call Now
+                                  </a>
+                                  <a href="https://wa.me/919967442899" target="_blank" class="btn btn-success btn-lg d-flex align-items-center justify-content-center gap-2 rounded-pill">
+                                    <i class="bi bi-whatsapp"></i> Message on WhatsApp
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-7">
+                              <div class="h-100 min-vh-400">
+                                <iframe 
+                                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.985655753065!2d78.5973!3d20.7410!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDQ0JzI3LjYiTiA3OMKwMzUnNTAuMyJF!5e0!3m2!1sen!2sin!4v1714000000000" 
+                                  class="w-100 h-100" 
+                                  style="border:0; min-height: 400px;" 
+                                  allowfullscreen="" 
+                                  loading="lazy">
+                                </iframe>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+</section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+  
+</div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="row gy-4 justify-content-between">
+      
+      <div class="col-lg-4 col-md-12">
+        <div class="footer-info">
+          <h3 class="footer-logo">Mauli <span>Decoration</span></h3>
+          <p>Transforming your special moments into unforgettable memories and your living spaces into 3D masterpieces.</p>
+          <div class="social-links mt-4">
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://wa.me/919967442899" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-4 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <a href="#home">Home</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#about">About Us</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#work">Our Work</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-4 footer-contact">
+        <h4>Contact Us</h4>
+        <p>
+          Wardha, Maharashtra <br>
+          India <br><br>
+          <strong>Phone:</strong> +91 99674 42899<br>
+          <strong>Email:</strong> info@maulidecoration.com<br>
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-4 footer-dev">
+        <h4>Design and Developed By</h4>
+        <p>High-resolution design & professional .NET development.</p>
+        <a href="https://nachikketyadav.online/" class="dev-link">
+          <i class="bi bi-cpu-fill"></i> Nachikket Yadav
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container text-center">
+      <div class="copyright">
+        &copy; 2026 <strong><span>Mauli Decoration</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </div>
+</footer><!-- End  Footer -->
+</body>
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+new Typed("#typed", {
+strings: [
+"Luxury Event Planning",
+"Wedding & Birthday Decoration",
+"3D Wall Interior Design",
+"Creative Theme Setup"
+],
+typeSpeed: 60,
+backSpeed: 30,
+loop: true
+});
+</script>
+
+</body>
+</html>
